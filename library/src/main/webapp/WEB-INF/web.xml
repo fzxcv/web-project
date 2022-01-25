@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>library</display-name>
+  <welcome-file-list>
+    <welcome-file>jsp/registration.jsp</welcome-file>
+    <welcome-file>jsp/registration.jsp</welcome-file>
+    <welcome-file>jsp/registration.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ReaderRegister</display-name>
+    <servlet-name>ReaderRegister</servlet-name>
+    <servlet-class>ReaderRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReaderRegister</servlet-name>
+    <url-pattern>/ReaderRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>controller.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   
+    <servlet-name>CommandProvider</servlet-name>
+    <servlet-class>CommandProvider</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CommandProvider</servlet-name>
+    <url-pattern>/CommandProvider</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>Command</servlet-name>
+    <servlet-class>Command</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Command</servlet-name>
+    <url-pattern>/Command</url-pattern>
+  </servlet-mapping>
+</web-app>
